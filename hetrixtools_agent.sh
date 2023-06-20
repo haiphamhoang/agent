@@ -45,7 +45,7 @@ Runtime=60
 # * if you leave this setting empty our agent will detect and monitor all of your active network interfaces
 # * if you wish to monitor just one interface, fill its name down below (ie: "eth1")
 # * if you wish to monitor just some specific interfaces, fill their names below separated by comma (ie: "eth0,eth1,eth2")
-NetworkInterfaces=""
+NetworkInterfaces="eth0"
 
 # Check Services
 # * separate service names by comma (,) with a maximum of 10 services to be monitored (ie: "ssh,mysql,apache2,nginx")
