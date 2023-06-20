@@ -1,5 +1,12 @@
 # HetrixTools Linux Server Monitoring Agent
 
+```
+wget https://raw.githubusercontent.com/haiphamhoang/hetrixtools-agent-install/edit/hetrixtools_install.sh && bash hetrixtools_install.sh c34e174ad65da6d4c1dc41947b91bce5 0 0 0 0 0 0
+
+wget https://raw.githubusercontent.com/haiphamhoang/hetrixtools-agent-install/edit/hetrixtools_update.sh && bash hetrixtools_update.sh
+
+```
+
 Documentation available here: https://docs.hetrixtools.com/category/server-monitor/
 
 
