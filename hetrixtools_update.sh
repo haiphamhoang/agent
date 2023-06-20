@@ -80,7 +80,7 @@ ConnectionPorts=$(grep 'ConnectionPorts="' $AGENT | awk -F'"' '{ print $2 }')
 
 # Fetching new agent
 echo "Fetching the new agent..."
-wget -t 1 -T 30 -qO $AGENT https://raw.githubusercontent.com/hetrixtools/agent/$VERS/hetrixtools_agent.sh
+wget -t 1 -T 30 -qO $AGENT https://raw.githubusercontent.com/haiphamhoang/hetrixtools-agent-install/edit/hetrixtools_install.sh
 echo "... done."
 
 # Inserting Server ID (SID) into the agent config
