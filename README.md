@@ -1,5 +1,18 @@
 # HetrixTools Linux Server Monitoring Agent
 
+```
+wget https://raw.githubusercontent.com/haiphamhoang/hetrixtools-agent-install/2.0.x-eth0/hetrixtools_install.sh && bash hetrixtools_install.sh YOURID 0 0 0 0 0 0
+
+wget https://raw.githubusercontent.com/haiphamhoang/hetrixtools-agent-install/2.0.x-eth0/hetrixtools_update.sh && bash hetrixtools_update.sh 
+
+```
+
+Fix when ipv6 error
+```
+wget --inet4-only --retry-connrefused --waitretry=1 -t 3 -T 15 -qO- --post-file="$ScriptPath/hetrixtools_agent.log" https://sm.hetrixtools.net/ &> /dev/null
+```
+
+
 Documentation available here: https://docs.hetrixtools.com/category/server-monitor/
 
 

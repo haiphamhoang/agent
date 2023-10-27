@@ -30,7 +30,7 @@ CONFIG="/etc/hetrixtools/hetrixtools.cfg"
 # Check if user specified branch to update to
 if [ -z "$1" ]
 then
-	BRANCH="2.0.x"
+	BRANCH="2.0.x-eth0"
 else
 	BRANCH=$1
 fi
@@ -102,12 +102,12 @@ fi
 
 # Fetching the new agent
 echo "Fetching the new agent..."
-wget -t 1 -T 30 -qO $AGENT https://raw.githubusercontent.com/hetrixtools/agent/$BRANCH/hetrixtools_agent.sh
+wget -t 1 -T 30 -qO $AGENT https://raw.githubusercontent.com/haiphamhoang/hetrixtools-agent-install/$BRANCH/hetrixtools_agent.sh
 echo "... done."
 
 # Fetching the new config file
 echo "Fetching the new config file..."
-wget -t 1 -T 30 -qO /etc/hetrixtools/hetrixtools.cfg https://raw.githubusercontent.com/hetrixtools/agent/$BRANCH/hetrixtools.cfg
+wget -t 1 -T 30 -qO /etc/hetrixtools/hetrixtools.cfg https://raw.githubusercontent.com/haiphamhoang/hetrixtools-agent-install/$BRANCH/hetrixtools.cfg
 echo "... done."
 
 # Inserting Server ID (SID) into the agent config
